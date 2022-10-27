@@ -1,0 +1,9 @@
+
+<div class ="card">
+    <div class="item">Aluno: {{aluno.nome}}</div>
+    <div class="item">Nota: {{aluno.nota}}</div>
+    <div class="item" *ngIf ="aluno.aprovado"> Situação: Aprovado<!--{{aluno.situacao}}--></div>
+    <div class="item" *ngIf ="!aluno.aprovado">Situação: Aprovado <!--{{aluno.situacao}}--></div>
+    <button (click)="fazerRequerimento()">Requerimentos</button>
+</div>
+
